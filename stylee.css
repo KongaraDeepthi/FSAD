@@ -1,0 +1,75 @@
+body {
+    background: white;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+/* HEADING EXACT LIKE YOUR IMAGE */
+.heading {
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    font-size: 36px;
+    font-weight: bold;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+    background-size: 300% 300%;
+    color: black;
+    box-shadow: 0 0 10px #999;
+    animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* TABLE EXACT LIKE IMAGE */
+table {
+    width: 80%;
+    border-collapse: collapse; /* VERY IMPORTANT for inner borders */
+}
+
+th, td {
+    border: 1px solid #000;   /* Inner borders */
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+/* IMAGE SIZE LIKE YOUR PICTURE */
+.about img {
+    width: 200px;   /* change size as you like */
+    height: auto;
+    border-radius: 10px;
+}
+
+.price::before {
+    content: "₹";
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+/* BUTTONS */
+.update, .delete {
+    padding: 10px 25px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.update {
+    background: #4CAF50;
+    color: white;
+}
+
+.delete {
+    background: #f44336;
+    color: white;
+}
+
+.update:hover, .delete:hover {
+    opacity: 0.7;
+}
