@@ -1,0 +1,81 @@
+<style>
+  /* General body style */
+  body {
+    font-family: Arial, sans-serif;
+    padding: 50px;          /* adjust overall page padding */
+    background: #f8f8f8;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  /* Timetable container (optional for scroll on small screens) */
+  .table-container {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  /* Table style */
+  table {
+    width: 100%;             /* full width */
+    max-width: 1500px;       /* optional max width */
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;         /* larger text for table cells */
+  }
+
+  /* Table headers */
+  th {
+    background-color: #0a92d6;
+    color: white;
+    padding: 20px 25px;      /* bigger cells */
+    font-size: 22px;         /* larger header text */
+    border: 2px solid #fff;  /* inner border for header */
+  }
+
+  /* Table cells */
+  td {
+    border: 1px solid #999;
+    padding: 20px 25px;      /* taller and wider cells */
+    font-size: 18px;
+  }
+
+  /* Alternate row colors */
+  tr:nth-child(even) {
+    background-color: #e8f0fe;
+  }
+
+  /* Hover effect */
+  tr:hover {
+    background-color: #d0e7ff;
+  }
+
+  /* Buttons styling */
+  .update {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .update:hover {
+    background-color: #45a049;
+  }
+
+  .delete {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .delete:hover {
+    background-color: #da190b;
+  }
+</style>
